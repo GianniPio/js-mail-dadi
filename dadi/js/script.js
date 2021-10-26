@@ -6,12 +6,12 @@
 
 // numero dado per il giocatore
 
-const userNum = Math.ceil(Math.random() * 6) + 1;
+const userNum = Math.floor(Math.random() * 6) + 1;
 console.log("Il dado uscito al giocatore è", userNum);
 
 // numero random per il computer
 
-const pcNum = Math.ceil(Math.random() * 6) + 1;
+const pcNum = Math.floor(Math.random() * 6) + 1;
 console.log("Il dado uscito al pc è", pcNum);
 
 // generare un if che fa il controllo per la vincita
