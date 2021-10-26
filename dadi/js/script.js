@@ -7,11 +7,27 @@
 // numero dado per il giocatore
 
 const userNum = Math.ceil(Math.random() * 6) + 1;
-console.log(userNum);
+console.log("Il dado uscito al giocatore è", userNum);
 
 // numero random per il computer
 
 const pcNum = Math.ceil(Math.random() * 6) + 1;
-console.log(pcNum);
+console.log("Il dado uscito al pc è", pcNum);
 
 // generare un if che fa il controllo per la vincita
+
+if (userNum > pcNum) {
+    
+    // Se il numero dell'utente è maggiore del numero del pc
+    console.log("Il vincitore è l'utente");
+
+} else if (userNum < pcNum) {
+    
+    // Se il numero dell'utente è minore del numero del pc
+    console.log("Il vincitore è il pc");
+} else {
+
+    // Se i dadi sono uguali
+    console.log("I dadi sono uguali quindi non c'è nessun vincitore --- PARITÀ")
+};
+
